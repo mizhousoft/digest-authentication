@@ -130,7 +130,7 @@ public final class DigestData
 
 		try
 		{
-			this.nonceExpiryTime = new Long(nonceTokens[0]);
+			this.nonceExpiryTime = Long.parseLong(nonceTokens[0]);
 		}
 		catch (NumberFormatException nfe)
 		{
