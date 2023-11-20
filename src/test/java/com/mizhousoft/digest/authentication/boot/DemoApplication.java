@@ -1,7 +1,5 @@
 package com.mizhousoft.digest.authentication.boot;
 
-import javax.servlet.Filter;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -12,6 +10,8 @@ import com.mizhousoft.digest.authentication.DigestAuthenticationService;
 import com.mizhousoft.digest.authentication.www.DigestAuthenticationEntryPoint;
 import com.mizhousoft.digest.authentication.www.DigestAuthenticationFilter;
 import com.mizhousoft.digest.authentication.www.SecurityContextPersistenceFilter;
+
+import jakarta.servlet.Filter;
 
 @ComponentScan("com.mizhousoft")
 @SpringBootApplication

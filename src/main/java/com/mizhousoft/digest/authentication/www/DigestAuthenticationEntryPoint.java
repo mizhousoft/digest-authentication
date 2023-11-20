@@ -3,10 +3,6 @@ package com.mizhousoft.digest.authentication.www;
 import java.io.IOException;
 import java.util.Base64;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,6 +10,10 @@ import com.mizhousoft.digest.authentication.AuthenticationEntryPoint;
 import com.mizhousoft.digest.authentication.exception.AuthenticationException;
 import com.mizhousoft.digest.authentication.exception.NonceExpiredException;
 import com.mizhousoft.digest.authentication.util.DigestAuthUtils;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * 摘要认证入口点

@@ -2,12 +2,6 @@ package com.mizhousoft.digest.authentication.www;
 
 import java.io.IOException;
 
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -20,6 +14,12 @@ import com.mizhousoft.digest.authentication.UserDetails;
 import com.mizhousoft.digest.authentication.exception.AuthenticationException;
 import com.mizhousoft.digest.authentication.exception.BadCredentialsException;
 import com.mizhousoft.digest.authentication.exception.NonceExpiredException;
+
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 /**
  * 摘要认证过滤器
